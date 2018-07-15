@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>finddit with reddit</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="bg-dark text-danger py-2">
+    <div class="container">
+        <h2 class="display-4">FINDDIT reddit</h2>
+    </div>
+</header>
+<div class="container">
+    <div class="card mt-4">
+        <div class="card-header">
+            <h4 class="display-4">search result</h4>
+        </div>
+        <div class="card-body">
+            <form id="myForm">
+                <div class="form-group">
+                    <input type="search" class="form-control" placeholder="search term" id="search-term">
+                </div>
+                <div class="form-group">
+                    <span class="font-italic mr-2">sort by : </span>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="sort" value="relevance" class="form-check-input" id="relevance" checked><label
+                            class="form-check-label" for="relevance">Relevance</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="sort" value="new" class="form-check-input" id="new"><label
+                            class="form-check-label" for="new">latest</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="font-weight-bold" for="limit">limit</label>
+                    <select class="form-control" name="limit" id="limit">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="25" selected>25</option>
+                    </select>
+                </div>
+                <button type="submit" class="mt-4 btn btn-dark form-control">search</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container mt-4">
+    <div class="card-columns">
+
+    </div>
+</div>
+<!-- script -->
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
